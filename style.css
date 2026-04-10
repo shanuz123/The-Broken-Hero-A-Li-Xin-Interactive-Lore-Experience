@@ -289,14 +289,14 @@ p {
 }
 .shadow-side {
   z-index: 1;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/dist/li\ xin\ shadow.jpeg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('dist/li\ xin\ shadow.jpeg');
   background-size: cover;
   background-position: center;
   color: var(--color-parchment);
 }
 .radiant-side {
   z-index: 2;
-  background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('/dist/li\ xin\ light.jpeg');
+  background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('dist/li\ xin\ light.jpeg');
   background-size: cover;
   background-position: center;
   filter: drop-shadow(10px 0 15px rgba(0,0,0,0.5));
