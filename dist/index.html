@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Tale of Li Xin - The Broken Hero. An immersive storytelling experience." />
+    <title>Li Xin — The Broken Hero</title>
+    <!-- Premium Fonts: Cinzel for cinematic headings, Inter for clean body, Ma Shan Zheng for Chinese text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-Dyy5ye4s.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-9XB-So-2.css">
+  </head>
+  <body>
+    <!-- Abstract particles/ink overlay -->
+    <div id="particles-container"></div>
+    <div class="scroll-prompt overlay-prompt">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+      <p>Scroll</p>
+    </div>
+
+    <nav class="nav-system">
+      <div class="amulet active" data-target="s1"><span class="zh">一</span></div>
+      <div class="amulet" data-target="s2"><span class="zh">二</span></div>
+      <div class="amulet" data-target="s3"><span class="zh">三</span></div>
+      <div class="amulet" data-target="s4"><span class="zh">四</span></div>
+      <div class="amulet" data-target="s5"><span class="zh">五</span></div>
+      <div class="amulet" data-target="s6"><span class="zh">六</span></div>
+    </nav>
+
+    <main class="story-container">
+      <!-- Section 1: Hero Banner -->
+      <section id="s1" class="story-section parallax-section hero-banner">
+        <div class="parallax-bg" style="background-image: url('/hero_background.png');"></div>
+        <div class="glass-panel center-panel fade-in-up">
+          <h1 class="title">Li Xin <span class="zh-title">(李信)</span></h1>
+          <h2 class="subtitle">The Broken Hero</h2>
+        </div>
+      </section>
+
+      <!-- Section 2: Origins -->
+      <section id="s2" class="story-section parallax-section origins">
+        <div class="parallax-bg" style="background-image: url('/origins_background.png');"></div>
+        <div class="content-wrapper">
+          <div class="glass-panel text-panel from-left fade-in-up narrative">
+            <h2 class="section-title">Origins <span class="zh-title">起源</span></h2>
+            <p>Once a loyal and brilliant general of the Qin army, Li Xin fought alongside the legendary Ying Zheng. Known for his unmatched swordsmanship and deep loyalty, he was the empire's rising military prodigy. At this moment, Li Xin was the absolute embodiment of order, duty, and honor.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: The Fall -->
+      <section id="s3" class="story-section parallax-section the-fall">
+        <div class="parallax-bg" style="background-image: url('/fall_background.png');"></div>
+        <div class="rain-overlay"></div>
+        <div class="content-wrapper align-right">
+          <div class="glass-panel text-panel from-right fade-in-up narrative dark-mode">
+            <h2 class="section-title text-crimson">The Fall <span class="zh-title">陨落</span></h2>
+            <p>Pride precedes the fall. Underestimating his enemy, Li Xin led his troops into an absolute disaster. Thousands perished under his command. Instead of a glorious death, he survived—shattering his confidence and cursing him with unbearable guilt. The seeds of self-hatred were planted.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Corruption -->
+      <section id="s4" class="story-section parallax-section corruption">
+        <div class="parallax-bg" style="background-image: url('/corruption_face.png');"></div>
+        <div class="content-wrapper">
+          <div class="glass-panel text-panel from-left fade-in-up narrative dark-mode abyss-glow">
+            <h2 class="section-title text-purple">Corruption <span class="zh-title">腐化</span></h2>
+            <p>To regain his strength and seek an impossible redemption, Li Xin embraced a forbidden, dark force. This choice shattered his humanity, splitting his mind and body between the fading light of his past and the all-consuming darkness of his rage.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: The Duality (Interactive Slider) -->
+      <section id="s5" class="story-section duality-section">
+        <div class="split-wrapper" id="duality-container">
+          
+          <!-- Dark Side (Background Base) -->
+          <div class="split-side shadow-side">
+            <div class="split-content narrative dark-mode">
+              <h2 class="section-title text-crimson">Shadow Form <span class="zh-title">暗形态</span></h2>
+              <p>Fueled by anger and regret. Prioritizes raw destruction over control. Will annihilate anything in its path.</p>
+              <div class="sword-icon dark-sword">🌑</div>
+            </div>
+          </div>
+
+          <!-- Light Side (Foreground Clipper) -->
+          <div class="split-side radiant-side" id="radiant-side">
+            <div class="split-content narrative">
+              <h2 class="section-title text-gold">Radiant Form <span class="zh-title">光形态</span></h2>
+              <p>Represents his former self. Fights with control, purpose, and discipline. Seeks redemption.</p>
+              <div class="sword-icon light-sword">🌞</div>
+            </div>
+          </div>
+
+          <div class="slider-handle" id="slider-handle">
+            <div class="slider-handle-line"></div>
+            <div class="slider-handle-button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9l-4 3 4 3M16 15l4-3-4-3"/></svg>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 6: Legacy -->
+      <section id="s6" class="story-section parallax-section legacy">
+        <div class="parallax-bg" style="background-image: url('/throne_room.png'); background-position: center bottom;"></div>
+        <div class="content-wrapper align-center">
+          <div class="glass-panel text-panel fade-in-up narrative imperial-glow">
+            <h2 class="section-title text-gold">Legacy & King <span class="zh-title">秦始皇</span></h2>
+            <p>A general broken, a king betrayed. Li Xin's connection to Ying Zheng remains his greatest burden. While the Emperor represents absolute order and ruthless ambition, Li Xin stands as the living, tragic cost of that very ambition. Can a weapon of darkness ever truly serve the light again?</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Footer -->
+      <footer class="story-footer">
+        <div class="footer-content fade-in-up">
+          <h2 class="footer-quote">"He fights not just enemies—but himself."</h2>
+          <button class="play-btn">
+            <span class="btn-text">Play Li Xin Now</span>
+            <div class="ink-bleed"></div>
+          </button>
+        </div>
+        <div class="ink-droplet-animation"></div>
+      </footer>
+    </main>
+
+  </body>
+</html>
