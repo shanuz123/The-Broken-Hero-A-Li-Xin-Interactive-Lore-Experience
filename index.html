@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Tale of Li Xin - The Broken Hero. An immersive storytelling experience." />
+    <title>Li Xin — The Broken Hero</title>
+    <!-- Premium Fonts: Cinzel for cinematic headings, Inter for clean body, Ma Shan Zheng for Chinese text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Abstract particles/ink overlay -->
+    <div id="particles-container"></div>
+    <div class="scroll-prompt overlay-prompt">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+      <p>Scroll</p>
+    </div>
+
+    <nav class="nav-system">
+      <div class="amulet active" data-target="s1"><span class="zh">一</span></div>
+      <div class="amulet" data-target="s2"><span class="zh">二</span></div>
+      <div class="amulet" data-target="s3"><span class="zh">三</span></div>
+      <div class="amulet" data-target="s4"><span class="zh">四</span></div>
+      <div class="amulet" data-target="s5"><span class="zh">五</span></div>
+      <div class="amulet" data-target="s6"><span class="zh">六</span></div>
+    </nav>
+
+    <main class="story-container">
+      <!-- Section 1: Hero Banner -->
+      <section id="s1" class="story-section parallax-section hero-banner">
+        <div class="parallax-bg" style="background-image: url('/dist/Li\ Xin\ Flawless\ 1.jpeg');"></div>
+        <div class="glass-panel center-panel fade-in-up">
+          <h1 class="title">Li Xin <span class="zh-title">(李信)</span></h1>
+          <h2 class="subtitle">The Broken Hero</h2>
+        </div>
+      </section>
+
+      <!-- Section 2: Origins -->
+      <section id="s2" class="story-section parallax-section origins">
+        <div class="parallax-bg" style="background-image: url('/dist/Li\ Xin.jpg');"></div>
+        <div class="content-wrapper">
+          <div class="glass-panel text-panel from-left fade-in-up narrative">
+            <h2 class="section-title">Vanguard <span class="zh-title">锋芒</span></h2>
+            <p>Before the rust and the bloodstains, Li Xin was the razor edge of the Qin empire. He wasn't just a general; he was Ying Zheng’s apex predator, a prodigy carved from sheer discipline and lethal ambition. When he drew his blade, it was the absolute word of law. He was the golden child of a rising dynasty, carrying the weight of a unified continent on shoulders that refused to bow. The battlefield was his personal canvas, and his sword painted nothing but absolute, flawless victory.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: The Fall -->
+      <section id="s3" class="story-section parallax-section the-fall">
+        <div class="parallax-bg" style="background-image: url('/dist/Shan\ Hai\ Icefire-5027.png');"></div>
+        <div class="rain-overlay"></div>
+        <div class="content-wrapper align-right">
+          <div class="glass-panel text-panel from-right fade-in-up narrative dark-mode">
+            <h2 class="section-title text-crimson">The Fall <span class="zh-title">陨落</span></h2>
+            <p>But ambition is a blindfold, and pride is the executioner. He pushed too far, misjudged the shadows of his enemy, and led his loyal vanguard straight into a total meat grinder. The agonizing screams of tens of thousands of his own men became the only lullaby he would ever hear again. Death would have been a mercy, a warrior’s quiet exit. Instead, he got the ultimate, gut-wrenching curse: survival. He crawled out of the carnage with his honor shattered, choking on the ash of his own ruined legend.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Corruption -->
+      <section id="s4" class="story-section parallax-section corruption">
+        <div class="parallax-bg" style="background-image: url('/dist/Heaven\ and\ Hell-2922.png');"></div>
+        <div class="content-wrapper">
+          <div class="glass-panel text-panel from-left fade-in-up narrative dark-mode abyss-glow">
+            <h2 class="section-title text-purple">Abyss <span class="zh-title">深渊</span></h2>
+            <p>Desperation breeds monsters. Hollowed out by grief and sick with the stench of his own failure, he reached out into the dark—and the dark grabbed his hand back. He struck a brutal bargain with a forbidden, abyssal force just to feel his pulse again. The power flooded his veins like liquid obsidian, replacing his broken pride with raw, unfiltered malice. It wasn't a resurrection; it was a hostile takeover. He bought his strength back, but the currency he used was his own humanity.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: The Duality (Interactive Slider) -->
+      <section id="s5" class="story-section duality-section">
+        <div class="split-wrapper" id="duality-container">
+          
+          <!-- Dark Side (Background Base) -->
+          <div class="split-side shadow-side">
+            <div class="side-image shadow-img"></div> <div class="split-content narrative dark-mode">
+              <h2 class="section-title text-crimson">Shadow Form <span class="zh-title">暗形态</span></h2>
+              <p>Fueled by anger and regret. Prioritizes raw destruction over control. Will annihilate anything in its path.</p>
+              <div class="sword-icon dark-sword">🌑</div>
+            </div>
+          </div>
+
+          <!-- Light Side (Foreground Clipper) -->
+          <div class="split-side radiant-side" id="radiant-side">
+            <div class="side-image radiant-img"></div> <div class="split-content narrative">
+              <h2 class="section-title text-gold">Light Form <span class="zh-title">光形态</span></h2>
+              <p>Represents his former self. Fights with control, purpose, and discipline. Seeks redemption.</p>
+              <div class="sword-icon light-sword">🌞</div>
+            </div>
+          </div>
+
+          <div class="slider-handle" id="slider-handle">
+            <div class="slider-handle-line"></div>
+            <div class="slider-handle-button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 9l-4 3 4 3M16 15l4-3-4-3"/></svg>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 6: Legacy -->
+      <section id="s6" class="story-section parallax-section legacy">
+        <div class="parallax-bg" style="background-image: url('/dist/Li\ Xin\ flawless\ 3.jpeg'); background-position: center bottom;"></div>
+        <div class="content-wrapper align-center">
+          <div class="glass-panel text-panel fade-in-up narrative imperial-glow">
+            <h2 class="section-title text-gold">Eternal <span class="zh-title">永恒</span></h2>
+            <p>He is no longer a man, but a permanent scar on the map of the empire. Li Xin exists in the shivering space between a heartbeat and a death rattle, a ghost who refuses to haunt and a soldier who refuses to die. Whether he is draped in the blinding gold of a dead sun or the suffocating ink of the void, he remains the ultimate paradox: a hero forged in failure. He is the end of the story that never truly stops bleeding, a silhouette standing at the edge of the world, eternally waiting for a battle that is finally large enough to consume him.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Footer -->
+      <footer class="story-footer">
+        <div class="footer-content fade-in-up">
+          <h2 class="footer-quote">"He fights not just enemies—but himself."</h2>
+          <button class="play-btn">
+            <span class="btn-text" onclick="window.location.href='https://camp.honorofkings.com/h5/app/index.html#/hero-detail?heroId=507';">More About Li Xin</span>
+            <div class="ink-bleed"></div>
+          </button>
+        </div>
+        <div class="ink-droplet-animation"></div>
+      </footer>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
