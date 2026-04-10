@@ -184,7 +184,7 @@ p {
   font-weight: 900;
   margin-bottom: 10px;
   background: linear-gradient(90deg, #D4AF37 0%, #fff 50%, #8A0303 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .hero-banner .subtitle {
