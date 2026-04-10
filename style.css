@@ -50,7 +50,6 @@ h1, h2, h3, .title, .subtitle, .section-title {
 }
 .zh, .zh-title {
   font-family: var(--font-zh);
-  opacity: 0.8;
   font-weight: normal;
 }
 p {
